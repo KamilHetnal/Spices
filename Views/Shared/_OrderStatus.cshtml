@@ -1,0 +1,20 @@
+﻿@model string
+@using spices.Utility
+<div>
+    @if (Model == SD.StatusSubmitted)
+    {
+        <img src="~/images/OrderPlaced.png" />
+    }
+    @if (Model == SD.StatusInProgress)
+    {
+        <img src="~/images/InKitchen.png" />
+    }
+    @if (Model == SD.StatusReady)
+    {
+        <img src="~/images/ReadyForPickup.png" />
+    }
+    @if (Model == SD.StatusComplited)
+    {
+        <img src="~/images/completed.png" />
+    }
+</div>
